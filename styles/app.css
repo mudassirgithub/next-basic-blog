@@ -1,0 +1,133 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+.theme-dark {
+    --backgroundColorPrimary: #2f3437;
+    --backgroundColorSecondary: #3f4447;
+    --backgroundColorThird: #363b3e;
+    --colorPrimary: #ffffff;
+    --colorSecondary: #5f666a;
+}
+
+.theme-light {
+    --backgroundColorPrimary: #ffffff;
+    --backgroundColorSecondary: #f2f2f2;
+    --backgroundColorThird: #f9f9fa;
+    --colorPrimary: #2f3437;
+    --colorSecondary: #5f666a;
+}
+
+.py-05 {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+}
+
+.markdown {
+    @apply w-full leading-normal text-main;
+}
+
+.markdown > * + * {
+    @apply mt-0 mb-4;
+}
+
+.markdown li + li {
+    @apply mt-1;
+}
+
+.markdown li > p + p {
+    @apply mt-6;
+}
+
+.markdown strong {
+    @apply font-semibold;
+}
+
+.markdown a {
+    @apply font-semibold underline;
+}
+
+.markdown strong a {
+    @apply font-bold;
+}
+
+.markdown h1 {
+    @apply pb-2 mt-6 mb-4 text-2xl font-bold leading-tight;
+}
+
+.markdown h2 {
+    @apply pb-2 mt-6 mb-4 text-2xl font-semibold leading-tight;
+}
+
+.markdown h3 {
+    @apply mt-6 mb-4 text-lg font-semibold leading-snug;
+}
+
+.markdown h4 {
+    @apply mt-6 mb-4 text-base font-semibold leading-none;
+}
+
+.markdown h5 {
+    @apply mt-6 mb-4 text-sm font-semibold leading-tight;
+}
+
+.markdown h6 {
+    @apply mt-6 mb-4 text-sm font-semibold leading-tight;
+}
+
+.markdown blockquote {
+    @apply px-4 py-3 my-4 overflow-x-auto text-lg border-l-2 rounded-lg shadow bg-blockquote border-main;
+}
+
+.markdown code {
+    @apply inline p-1 text-sm rounded bg-code-block py-05;
+}
+
+.markdown pre {
+    @apply min-w-full px-6 py-4 my-6 overflow-x-auto leading-tight rounded-md bg-code-block;
+}
+
+.markdown pre code {
+    @apply p-0 bg-code-block;
+}
+
+.markdown ul {
+    @apply pl-8 text-base list-disc;
+}
+
+.markdown ol {
+    @apply pl-8 text-base list-decimal;
+}
+
+.markdown kbd {
+    @apply inline-block px-1 text-xs font-normal align-middle border rounded shadow py-05 border-main;
+}
+
+.markdown table {
+    @apply min-w-full overflow-x-auto text-base border-main;
+}
+
+.markdown th {
+    @apply px-3 py-1 border border-main;
+}
+
+.markdown td {
+    @apply px-3 py-1 border border-main;
+}
+
+/* Override pygments style background color. */
+.markdown .highlight pre {
+    @apply bg-code-block !important;
+}
