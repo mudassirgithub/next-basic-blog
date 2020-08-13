@@ -19,7 +19,7 @@ export default function Home({ children }) {
             className={
                 (theme == "dark" ? "theme-dark" : "theme-light") +
                 " " +
-                "min-w-xs min-h-screen bg-main text-main"
+                "min-w-xs min-h-screen bg-main text-main font-poppins"
             }
         >
             <HomeHeader
