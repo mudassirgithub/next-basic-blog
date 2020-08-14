@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://next-basic-blog.vercel.app/sitemap.xml
