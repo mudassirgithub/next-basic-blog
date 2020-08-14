@@ -7,10 +7,10 @@ export default function Home({ children }) {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const handleThemeToggle = () => {
-        if (theme === "light") {
-            setTheme("dark");
-        } else {
+        if (theme === "dark") {
             setTheme("light");
+        } else {
+            setTheme("dark");
         }
     };
 
